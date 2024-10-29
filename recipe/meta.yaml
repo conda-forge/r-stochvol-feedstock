@@ -1,4 +1,4 @@
-{% set version = '3.2.4' %}
+{% set version = "3.2.5" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/stochvol_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/stochvol/stochvol_{{ version }}.tar.gz
-  sha256: 5c149912cbb774c0baccc62ee6b78fcdae378595d143a5a17c7bb56f89cd28b3
+  sha256: aeb85034232e872b6a031f000387d04f728751293b8d8cf1c2ecd2504f9bbfa9
 
 build:
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -57,12 +57,8 @@ about:
   home: https://gregorkastner.github.io/stochvol/
   dev_url: https://github.com/gregorkastner/stochvol
   license: GPL-2.0-or-later
-  summary: "Efficient algorithms for fully Bayesian estimation of stochastic volatility (SV)
-    models with and without asymmetry (leverage) via Markov chain Monte Carlo (MCMC)
-    methods. Methodological details are given in Kastner and Fr\xFChwirth-Schnatter
-    (2014) <doi:10.1016/j.csda.2013.01.002> and Hosszejni and Kastner (2019) <doi:10.1007/978-3-030-30611-3_8>;
-    the most common use cases are described in Hosszejni and Kastner (2021) <doi:10.18637/jss.v100.i12>
-    and Kastner (2016) <doi:10.18637/jss.v069.i05> and the package examples."
+  summary: "Efficient algorithms for fully Bayesian estimation of stochastic volatility (SV) models with and without asymmetry (leverage) via Markov chain Monte Carlo (MCMC) methods. Methodological details are given in Kastner and Frühwirth-Schnatter (2014) <doi:10.1016/j.csda.2013.01.002> and Hosszejni and Kastner (2019)
+    <doi:10.1007/978-3-030-30611-3_8>; the most common use cases are described in Hosszejni and Kastner (2021) <doi:10.18637/jss.v100.i12> and Kastner (2016) <doi:10.18637/jss.v069.i05> and the package examples."
   license_family: GPL2
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
