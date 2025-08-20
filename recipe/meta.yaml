@@ -1,4 +1,4 @@
-{% set version = "3.2.6" %}
+{% set version = "3.2.7" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/stochvol_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/stochvol/stochvol_{{ version }}.tar.gz
-  sha256: 7cee7b033080820b5d7e63b2508ac7a6997fbf43019d22421cd47b159535ca6a
+  sha256: d2cd014310dc11cc4f7bf24a2c25818ada78868143c47acd19930d406466ee0a
 
 build:
   number: 0
